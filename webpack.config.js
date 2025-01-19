@@ -8,7 +8,7 @@ module.exports = {
   entry: {
     content: './src/content/content.ts',
     popup: './src/popup/popup.ts',
-    background: './src/background/background.ts'
+    background: './src/background/background.ts',
   },
 
   output: {

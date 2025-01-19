@@ -1,0 +1,83 @@
+:root {
+	--primary-color: white;
+	--secondary-color: #9f9f9f;
+	--background-color: #101010;
+	--secondary-background-color: #131313;
+	--font-family: system-ui, -apple-system, sans-serif;
+	--font-size: 16px;
+}
+
+body {
+	margin: 0;
+	background: var(--background-color);
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: var(--font-size);
+}
+
+a, h1, p {
+	margin: 0;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	width: 350px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: var(--primary-color);
+	font-size: 18px;
+	padding: 20px 10px;
+}
+header p{
+	color: var(--secondary-color);
+	font-size: var(--font-size);
+}
+
+.instructions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--primary-color);
+	padding: 5px 10px;
+}
+.instructions-list{
+	display: flex;
+	flex-direction: column;
+	gap: 5px 0px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px 0px;
+	color: var(--secondary-color);
+	background: var(--secondary-background-color);
+	padding: 10px 10px;
+	margin-top: auto;
+}
+.footer a{
+	text-decoration: none;
+	color: var(--secondary-color);;
+}
+
+.footer-links {
+	display: flex;
+	gap: 5px;
+}
+
+.footer-credit{
+	color: var(--primary-color);
+}
+.footer-credit a{
+	text-decoration: none;
+	color: var(--primary-color);
+}

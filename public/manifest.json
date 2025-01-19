@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "tweet2lsat",
+  "version": "0.1.0",
+  "description": "Browser extension that turns tweets into lsat verbal reasoning questions",
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
