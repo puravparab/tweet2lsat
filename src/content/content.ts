@@ -28,6 +28,7 @@ function createLsatButton(): HTMLButtonElement {
 
         // Generate LSAT question
         const response = await generateLsatQuestion(tweetText);
+				console.log(response);
         
         // Handle the response
         handleLsatButtonClick(tweet, response);
