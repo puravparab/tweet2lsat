@@ -1,45 +1,45 @@
 import { LsatQuestionData, LsatResponse } from "../types/types";
 
-export const mockResponse: LsatResponse = {
-	"question": {
-		"stimulus": {
-			"source": "You're building a machine god in your image. I am building a machine that is a conduit for the thermodynamic God. We are not the same."
-		},
-		"questionStem": "Which one of the following can be inferred about the speaker's machine god?",
-		"answerChoices": [
-			{
-				"letter": "A",
-				"text": "The speaker's machine god is a sentient being.",
-				"isCorrect": false,
-				"reasoning": "The statement does not provide any information about the nature or characteristics of the speaker's machine god, including sentience."
-			},
-			{
-				"letter": "B",
-				"text": "The speaker's machine god is a creation of the speaker's own design.",
-				"isCorrect": true,
-				"reasoning": "The statement explicitly states 'You're building a machine god in your image', implying that the speaker is creating a machine that reflects their own design or likeness."
-			},
-			{
-				"letter": "C",
-				"text": "The speaker's machine god is a deity that is worshipped by the speaker.",
-				"isCorrect": false,
-				"reasoning": "The statement does not provide any information about the speaker's beliefs or practices regarding the machine god, including worship."
-			},
-			{
-				"letter": "D",
-				"text": "The speaker's machine god is a conduit for a deity.",
-				"isCorrect": false,
-				"reasoning": "The statement does not provide any information about the speaker's machine god being a conduit for a deity, whereas the person being addressed is building a machine that is a conduit for the thermodynamic God."
-			},
-			{
-				"letter": "E",
-				"text": "The speaker's machine god is a machine that is a conduit for a deity.",
-				"isCorrect": false,
-				"reasoning": "The statement does not provide any information about the speaker's machine god being a conduit for a deity, whereas the person being addressed is building a machine that is a conduit for the thermodynamic God."
-			}
-		]
-	}
-}
+// export const mockResponse: LsatResponse = {
+// 	"question": {
+// 		"stimulus": {
+// 			"source": "You're building a machine god in your image. I am building a machine that is a conduit for the thermodynamic God. We are not the same."
+// 		},
+// 		"questionStem": "Which one of the following can be inferred about the speaker's machine god?",
+// 		"answerChoices": [
+// 			{
+// 				"letter": "A",
+// 				"text": "The speaker's machine god is a sentient being.",
+// 				"isCorrect": false,
+// 				"reasoning": "The statement does not provide any information about the nature or characteristics of the speaker's machine god, including sentience."
+// 			},
+// 			{
+// 				"letter": "B",
+// 				"text": "The speaker's machine god is a creation of the speaker's own design.",
+// 				"isCorrect": true,
+// 				"reasoning": "The statement explicitly states 'You're building a machine god in your image', implying that the speaker is creating a machine that reflects their own design or likeness."
+// 			},
+// 			{
+// 				"letter": "C",
+// 				"text": "The speaker's machine god is a deity that is worshipped by the speaker.",
+// 				"isCorrect": false,
+// 				"reasoning": "The statement does not provide any information about the speaker's beliefs or practices regarding the machine god, including worship."
+// 			},
+// 			{
+// 				"letter": "D",
+// 				"text": "The speaker's machine god is a conduit for a deity.",
+// 				"isCorrect": false,
+// 				"reasoning": "The statement does not provide any information about the speaker's machine god being a conduit for a deity, whereas the person being addressed is building a machine that is a conduit for the thermodynamic God."
+// 			},
+// 			{
+// 				"letter": "E",
+// 				"text": "The speaker's machine god is a machine that is a conduit for a deity.",
+// 				"isCorrect": false,
+// 				"reasoning": "The statement does not provide any information about the speaker's machine god being a conduit for a deity, whereas the person being addressed is building a machine that is a conduit for the thermodynamic God."
+// 			}
+// 		]
+// 	}
+// }
 
 export function createQuestionContainer(question: LsatQuestionData): HTMLDivElement {
   // Create main container

@@ -18,3 +18,11 @@ export interface LsatQuestionData {
 export interface LsatResponse {
   question: LsatQuestionData;
 }
+
+export interface GroqErrorResponse {
+  error: {
+    message: string;
+    type: string;
+    code: string;
+  };
+}

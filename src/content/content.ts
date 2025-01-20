@@ -1,5 +1,5 @@
 import { handleLsatButtonClick, mockResponse } from "./questions";
-
+import { generateLsatQuestion } from "../service/groq";
 
 function createLsatButton(): HTMLButtonElement {
   const button = document.createElement('button');
@@ -9,12 +9,38 @@ function createLsatButton(): HTMLButtonElement {
   button.innerHTML = 'LSAT';
   button.setAttribute('role', 'button');
 
-	button.addEventListener('click', (e) => {
+	button.addEventListener('click', async (e) => {
     e.preventDefault();
     e.stopPropagation();
+
     const tweet = (e.target as HTMLElement).closest('article[data-testid="tweet"]');
     if (tweet) {
-      handleLsatButtonClick(tweet, mockResponse);
+      try {
+        // Get tweet text
+        const tweetText = tweet.querySelector('[data-testid="tweetText"]')?.textContent;
+        if (!tweetText) {
+          throw new Error('Could not find tweet text');
+        }
+
+        // Show loading state (optional)
+        button.textContent = 'Loading...';
+        button.disabled = true;
+
+        // Generate LSAT question
+        const response = await generateLsatQuestion(tweetText);
+        
+        // Handle the response
+        handleLsatButtonClick(tweet, response);
+
+      } catch (error) {
+        console.error('Error generating LSAT question:', error);
+        // Optionally show error to user
+        alert(error instanceof Error ? error.message : 'Failed to generate LSAT question. Retry');
+      } finally {
+        // Reset button state
+        button.textContent = 'LSAT';
+        button.disabled = false;
+      }
     }
   });
 	
