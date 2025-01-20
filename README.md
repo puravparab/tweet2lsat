@@ -4,7 +4,7 @@ This is a browser extension that turns tweets into LSAT verbal reasoning questio
 
 ### Installing the extension
 
-1. Download the latest release from the [releases page](https://github.com/puravparab/tweet2lsat/releases)
+1. Download the dist.zip from lastest [release](https://github.com/puravparab/tweet2lsat/releases)
 
 2. Unzip the downloaded file
 
