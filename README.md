@@ -1,4 +1,4 @@
-### What is tweet2lsat
+### What is tweet2lsat?
 
 This is a browser extension that turns tweets into LSAT verbal reasoning questions
 
