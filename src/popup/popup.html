@@ -13,8 +13,18 @@
 
     <div class="instructions">
       <ol class="instructions-list">
-        <li>Add your Groq API key in settings</li>
-        <li>Click the magic icon next to any tweet on x.com</li>
+				<li>
+          Get your API key from 
+          <a href="https://console.groq.com/keys" target="_blank" rel="noopener noreferrer">Groq AI</a>
+        </li>
+        <li class="api-key-section">
+          <label for="api-key">Enter your API key:</label>
+          <div class="api-input-container">
+            <input type="password" id="api-key" placeholder="Enter Groq API key">
+            <span id="api-status" class="api-status"></span>
+          </div>
+        </li>
+        <li>Click the magic icon next to any tweet on <a href="https://x.com" target="_blank" rel="noopener noreferrer">x.com</a></li>
       </ol>
     </div>
 

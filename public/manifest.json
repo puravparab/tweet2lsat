@@ -5,5 +5,8 @@
   "description": "Browser extension that turns tweets into lsat verbal reasoning questions",
   "action": {
     "default_popup": "popup.html"
-  }
+  },
+	"permissions": [
+    "storage"
+  ]
 }
