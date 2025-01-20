@@ -152,6 +152,32 @@ export function createQuestionContainer(question: LsatQuestionData): HTMLDivElem
   });
 
   container.appendChild(answersContainer);
+
+	// Add repo link
+	const repoLink = document.createElement('div');
+	repoLink.style.cssText = `
+		margin-top: 16px;
+		text-align: center;
+		font-size: 13px;
+		color: rgb(113, 118, 123);
+	`;
+	
+	const link = document.createElement('a');
+	link.href = 'https://github.com/puravparab/tweet2lsat';
+	link.target = '_blank';
+	link.rel = 'noopener noreferrer';
+	link.textContent = 'Powered by tweet2lsat';
+	link.style.cssText = `
+		color: rgb(113, 118, 123);
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	`;
+
+	repoLink.appendChild(link);
+	container.appendChild(repoLink);
+	
   return container;
 }
 

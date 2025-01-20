@@ -1,4 +1,4 @@
-import { handleLsatButtonClick, mockResponse } from "./questions";
+import { handleLsatButtonClick } from "./questions";
 import { generateLsatQuestion } from "../service/groq";
 
 function createLsatButton(): HTMLButtonElement {
