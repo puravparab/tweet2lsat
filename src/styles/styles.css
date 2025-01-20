@@ -71,7 +71,7 @@ header p{
 
 #api-key {
   flex: 1;
-  padding: 8px 12px;
+  padding: 8px 12px 8px 5px;
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
   background: var(--secondary-background-color);
@@ -98,8 +98,7 @@ header p{
 }
 
 .api-status {
-  position: absolute;
-  right: 10px;
+	padding-left: 5px;
   color: var(--success-color);
 }
 

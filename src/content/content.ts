@@ -1,9 +1,23 @@
+import { handleLsatButtonClick, mockResponse } from "./questions";
+
+
 function createLsatButton(): HTMLButtonElement {
   const button = document.createElement('button');
   button.className = 'css-175oi2r r-1777fci r-bt1l66 r-bztko3 r-lrvibr r-1loqt21 r-1ny4l3l'; // update this if changed on x.com
-  button.style.color = '#ffffff';
+  button.style.color = '#838383';
+	button.style.fontFamily = 'system-ui, -apple-system, sans-serif';
   button.innerHTML = 'LSAT';
   button.setAttribute('role', 'button');
+
+	button.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const tweet = (e.target as HTMLElement).closest('article[data-testid="tweet"]');
+    if (tweet) {
+      handleLsatButtonClick(tweet, mockResponse);
+    }
+  });
+	
   return button;
 }
 
